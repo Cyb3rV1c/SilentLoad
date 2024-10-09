@@ -1,8 +1,3 @@
- _____ _ _            _   _                     _ 
-/  ___(_) |          | | | |                   | |
-\ `--. _| | ___ _ __ | |_| |     ___   __ _  __| |
- `--. \ | |/ _ \ '_ \| __| |    / _ \ / _` |/ _` |
-/\__/ / | |  __/ | | | |_| |___| (_) | (_| | (_| |
-\____/|_|_|\___|_| |_|\__\_____/\___/ \__,_|\__,_|
+<img width="349" alt="Screenshot 2024-10-08 at 9 24 46 PM" src="https://github.com/user-attachments/assets/2bdf0100-dc60-48e9-acc8-72a2faed24aa">
 
 A reflective loader and DLL payload for injecting XOR-encrypted shellcode into memory
