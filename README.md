@@ -65,6 +65,7 @@ A simple XOR-based decryption routine is used to deobfuscate the shellcode befor
 **Reflective Loading:** The SilentLoad, triggered by shellcode or CreateRemoteThread(), finds its memory location, resolves essential functions (LoadLibraryA, GetProcAddress, VirtualAlloc), and allocates space for the DLL. 
 It then relocates the DLL, resolves imports, and calls the entry point (DllMain). Once loaded, it returns control to the initial shellcode or terminates the remote thread.
 
+**Code Obfuscation:** This Reflective DLL Loader includes a bit of code obfuscation to slow down static code analysis, enhancing its resistance against reverse engineering
 
 
 
