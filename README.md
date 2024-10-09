@@ -33,7 +33,7 @@ git clone https://github.com/Cyb3rV1c/SilentLoad
 
 **1.** Encrypt your generated shellcode in Xor, you can use [Xor_Encryptor ](https://github.com/Cyb3rV1c/Phantom/tree/main/Xor_Encryptor)
 
-**2.** Copy your shellcode into the payload Dll "funproject.sln"
+**2.** Copy your shellcode into the payload Dll "silentpload.sln"
    
 ***Notice*** Make sure to add in the project the same xor key that you encrypted your shellcode with.
 
