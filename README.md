@@ -53,12 +53,14 @@ git clone https://github.com/Cyb3rV1c/SilentLoad
 
 
 **Shellcode Injection:**
-Remote Process Injection via OpenProcess(), VirtualAllocEx(), WriteProcessMemory(), and CreateRemoteThread() to inject and execute XOR-encrypted shellcode into a remote process.
+Will use VirtualAlloc() to allocate the memory with the arguments MEM_RESERVE, PAGE_READWRITE but the execution part will be passed to VirtualProtect, this way adds a bit of stealthiness,
+instead of having VirtualAlloc executing the shellcode, which is often seen in the field.
 
 **XOR Encryption/Decryption:**
 A simple XOR-based decryption routine is used to deobfuscate the shellcode before injection, providing a layer of evasion from static analysis.
 
-
+**Reflective Loading:** The SilentLoad, triggered by shellcode or CreateRemoteThread(), finds its memory location, resolves essential functions (LoadLibraryA, GetProcAddress, VirtualAlloc), and allocates space for the DLL. 
+It then relocates the DLL, resolves imports, and calls the entry point (DllMain). Once loaded, it returns control to the initial shellcode or terminates the remote thread.
 
 
 
