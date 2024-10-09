@@ -33,9 +33,11 @@ git clone https://github.com/Cyb3rV1c/SilentLoad
 
 1. Encrypt your generated shellcode in Xor, you can use [Xor_Encryptor ](https://github.com/Cyb3rV1c/Phantom/tree/main/Xor_Encryptor)
 
-2. Copy your shellcode into the payload DLL "funproject.sln" **notice:** make sure to use the same xor key that you encrypted your shellcode with.
+2. Copy your shellcode into the payload Dll "funproject.sln"
+**notice:** make sure to use the same xor key that you encrypted your shellcode with.
+3. Build the Dll
 
-3. 
+4. Specify the Dll's path in SilentLoad.sln & build it. 
 
 ***Notice***: Make sure your shellcode has the same architecture as the environment you'll execute it in.
 
