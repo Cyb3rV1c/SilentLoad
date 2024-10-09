@@ -31,16 +31,9 @@ git clone https://github.com/Cyb3rV1c/SilentLoad
 
 # Usage
 
-1. Add your .raw shellcode file in the same directory as the Xor_Encryptor Tool
+1. Encrypt your generated shellcode in Xor, you can use [Xor_Encryptor ](https://github.com/Cyb3rV1c/Phantom/tree/main/Xor_Encryptor)
 
-2. Execute the tool :
-
-```
-.\Encryptor_xor.exe reverseshell.raw
-```
-3. Copy encrypted code from command prompt output & add it to phantom.sln
-
-4. Build Release Phantom Executable
+2. Copy your shellcode into the payload DLL
 
 ***Notice***: Make sure your shellcode has the same architecture as the environment you'll execute it in.
 
