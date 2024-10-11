@@ -3,7 +3,7 @@
  * Created: October 2024
  * Description: Reflective DLL Loader program, made to load dll in memory with a little bit of obfuscation
    to slow down static code analysis.
- * License: MIT License (or any other license you choose)
+ * License: MIT License
  *
  * This code was written by Cyb3rV1c and is a work in progress for cybersecurity
  * educational purposes. Unauthorized use or distribution is not allowed without
